@@ -304,6 +304,10 @@
         padding: 20px;
     }
 
+    .paie{
+        flex-direction: column;
+    }
+
     .ICONE{
         display: none !important;
     }
