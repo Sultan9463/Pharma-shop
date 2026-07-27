@@ -1,0 +1,1138 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pharma-Shop</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="style.css">
+
+<body class="p-2">
+    <header class="d-flex justify-content-between text-white align-items-center px-4 princi-color">
+        <p class="p-0 m-0">Livraison gratuite pour toute commande de plus de 10.000fcfa</p>
+        <div class="d-flex justify-content-center gap-3 fs-5 align-items-center ">
+            <i class="bi bi-facebook"></i>
+            <i class="bi bi-twitter-x"></i>
+            <i class="bi bi-instagram"></i>
+            <i class="bi bi-google"></i>
+
+        </div>
+    </header>
+
+
+
+
+    <nav class="navbar navbar-expand-lg bg-white  py-2">
+        <div class="container">
+
+            <!-- Logo -->
+            <a href="#" class="navbar-brand d-flex align-items-center">
+                <img src="Pharma Ressources/Home-Images/Brand-Logo.png" class="img-fluid imga1 LOGO " alt="">
+                <!-- <img src="Pharma Ressources/Home-Images/Logo.png" class="img-fluid imga" alt=""> -->
+
+            </a>
+
+            <!-- Partie droite mobile -->
+            <div class="d-flex d-lg-none align-items-center gap-2">
+
+                <a href="#" class="text-dark text-decoration-none">
+                    <i class="bi bi-cart3 fs-4"></i>
+                </a>
+
+                <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#menuMobile"
+                    aria-controls="menuMobile">
+
+                    <span class="navbar-toggler-icon"></span>
+
+                </button>
+
+            </div>
+
+
+            <!-- Contenu Desktop -->
+            <div class="d-none d-lg-flex flex-grow-1 justify-content-between align-items-center">
+
+                <!-- Centre -->
+                <div class="d-flex flex-column align-items-center flex-grow-1">
+
+                    <!-- Recherche -->
+                    <div class="input-group recherche w-50 mb-3">
+
+                        <input type="text" class="form-control recherche" placeholder="Recherche...">
+
+                        <button class="input-group-text princi-color recherche1">
+                            <i class="bi bi-search"></i>
+                        </button>
+
+                    </div>
+
+                    <!-- Menu -->
+                    <ul class="navbar-nav">
+
+                        <li class="nav-item">
+                            <a class="nav-link" href="index.html">Home +</a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a class="nav-link" href="Shop.html">Shop +</a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Blogs +</a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Pages +</a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">On Sale +</a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Contact +</a>
+                        </li>
+
+                    </ul>
+
+                </div>
+
+                <!-- Partie droite Desktop -->
+                <div class="d-flex align-items-center gap-3 ms-4">
+
+                    <a href="#" class="text-decoration-none text-dark fw-semibold">
+                        SIGN IN
+                    </a>
+
+                    <a href="admin.html" class="text-decoration-none text-black">
+                        SIGN UP
+                    </a>
+
+                    <a href="#" class="text-dark text-decoration-none">
+                        <i class="bi bi-cart3 fs-4"></i>
+                    </a>
+
+                    <span class="fw-bold">
+                        0 FCFA
+                    </span>
+
+                </div>
+
+            </div>
+
+        </div>
+    </nav>
+
+    <!-- ===================== OFFCANVAS MOBILE ===================== -->
+
+    <div class="offcanvas offcanvas-start" tabindex="-1" id="menuMobile">
+
+        <div class="offcanvas-header">
+
+            <h5 class="offcanvas-title">
+                Pharma-Shop
+            </h5>
+
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas">
+            </button>
+
+        </div>
+
+        <div class="offcanvas-body">
+
+            <!-- Recherche -->
+
+            <div class="input-group mb-4">
+
+                <input type="text" class="form-control" placeholder="Recherche...">
+
+                <button class="input-group-text">
+                    <i class="bi bi-search"></i>
+                </button>
+
+            </div>
+
+            <!-- Menu -->
+
+            <ul class="navbar-nav">
+
+                <li class="nav-item">
+                    <a class="nav-link" href="index.html">Home +</a>
+                </li>
+
+                <li class="nav-item">
+                    <a class="nav-link" href="Shop.html">Shop +</a>
+                </li>
+
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Blogs +</a>
+                </li>
+
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Pages +</a>
+                </li>
+
+                <li class="nav-item">
+                    <a class="nav-link" href="#">On Sale +</a>
+                </li>
+
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Contact +</a>
+                </li>
+
+            </ul>
+
+            <hr>
+
+            <!-- Connexion -->
+
+            <a href="#" class="btn btn-outline-primary w-100 mb-3">
+                SIGN IN
+            </a>
+
+            <a href="admin.html" class="btn btn-primary w-100 text-decoration-none ">
+                SIGN UP
+            </a>
+
+        </div>
+
+    </div>
+
+
+
+
+
+
+
+    <div class="container d-flex gap-3 bar1 justify-content-center">
+        <div class="d-flex gap-2 align-items-center">
+            <div class="rong d-flex align-items-center fs-2 text-white justify-content-center">
+                <i class="bi bi-capsule-pill"></i>
+
+            </div>
+
+            <span><span class="fw-bold">Medicament</span> <br>
+                Plus de 2000 produits </span>
+        </div>
+
+        <div class="d-flex gap-2 align-items-center">
+            <div class="rong1 d-flex align-items-center fs-2 text-white justify-content-center">
+                <i class="bi bi-droplet"></i>
+
+            </div>
+
+            <span><span class="fw-bold">Soins</span> <br>
+                Plus de 2000 produits </span>
+        </div>
+
+
+        <div class="d-flex gap-2 align-items-center">
+            <div class="rong2 d-flex align-items-center fs-2 text-white justify-content-center">
+
+                <i class="bi bi-journal-medical"></i>
+
+            </div>
+
+            <span><span class="fw-bold">Diagnostique</span> <br>
+                livret de test & check up </span>
+        </div>
+
+        <div class="d-flex gap-2 align-items-center">
+            <div class="rong d-flex align-items-center fs-2 text-white justify-content-center">
+
+                <i class="bi bi-heart-pulse"></i>
+
+            </div>
+
+            <span><span class="fw-bold">Coin santé</span> <br>
+                Dernière tendances des experts </span>
+        </div>
+
+        <div class="d-flex gap-2 align-items-center">
+            <div class="rong3 d-flex align-items-center fs-2 text-white justify-content-center">
+                <i class="bi bi-hospital"></i>
+
+            </div>
+
+            <span><span class="fw-bold">Autres</span> <br>
+                Plus d'info </span>
+        </div>
+    </div>
+
+    <div class="container-fluid mt-4">
+        <div class="row">
+
+            <!-- Sidebar -->
+            <div class="col-12 col-lg-3 p-3 ">
+                <div class="d-flex flex-column gap-2 w-100 sultan1">
+                    <h5>FILTRER PAR CATEGORIES</h5>
+
+                    <div class="d-flex align-items-center gap-2 mb-2">
+                        <img src="Pharma Ressources/Categories Icons/category-bucco.png" class="img-fluid imga5" alt="">
+                        <h6 class="mb-0">BUCCO-DENTAIRE</h6>
+                    </div>
+                    <div class="d-flex align-items-center gap-2  ">
+                        <img src="Pharma Ressources/Categories Icons/category-soins.png" class="img-fluid  imga5"
+                            alt="">
+                        <h6>BUCCO-DENTAIRE</h6>
+                    </div>
+                    <div class="d-flex align-items-center gap-2 ">
+                        <img src="Pharma Ressources/Categories Icons/category-huiles.png" class="img-fluid  imga5"
+                            alt="">
+                        <h6>BUCCO-DENTAIRE</h6>
+                    </div>
+                    <div class="d-flex align-items-center gap-2  ">
+                        <img src="Pharma Ressources/Categories Icons/category-médicaments.png" class="img-fluid  imga5"
+                            alt="">
+                        <h6>BUCCO-DENTAIRE</h6>
+                    </div>
+                    <div class="d-flex align-items-center gap-2  ">
+                        <img src="Pharma Ressources/Categories Icons/category-sirop.png" class="img-fluid  imga5"
+                            alt="">
+                        <h6>BUCCO-DENTAIRE</h6>
+                    </div>
+                    <div class="d-flex align-items-center gap-2  ">
+                        <img src="Pharma Ressources/Categories Icons/category-protection.png" class="img-fluid  imga5"
+                            alt="">
+                        <h6>BUCCO-DENTAIRE</h6>
+                    </div>
+                    <div class="d-flex align-items-center gap-2  ">
+                        <img src="Pharma Ressources/Categories Icons/category-dispositif.png" class="img-fluid  imga5"
+                            alt="">
+                        <h6>BUCCO-DENTAIRE</h6>
+                    </div>
+                    <div class="d-flex align-items-center gap-2  ">
+                        <img src="Pharma Ressources/Categories Icons/category-vitamin.png" class="img-fluid  imga5"
+                            alt="">
+                        <h6>BUCCO-DENTAIRE</h6>
+                    </div>
+
+                    <div class=" d-flex flex-column gap-2">
+                        <h5>FILTRER PAR PRIX</h5>
+                        <input type="range" class="w-75">
+
+                        <div class="d-flex justify-content-between w-75">
+                            <p>Prix entre 1000 fcfa - 100000</p>
+                            <p>FILTRER</p>
+
+                        </div>
+
+                    </div>
+                    <img src="Pharma Ressources/Home-Images/pub-1.jpg" class="img-fluid mt-4" alt="">
+                </div>
+                <div class="col-12 col-lg-3 p-3">
+                    <div class="d-flex flex-column gap-2 w-100 sultan d-none">
+
+                        <!-- Bouton catégories -->
+                        <div class="filter-title fw-bold" data-bs-toggle="collapse" data-bs-target="#categories">
+                            FILTRER PAR CATEGORIES
+                            <i class="bi bi-chevron-down"></i>
+                        </div>
+
+                        <!-- Contenu catégories -->
+                        <div id="categories" class="collapse mt-3">
+
+                            <div class="d-flex align-items-center gap-2 mb-2">
+                        <img src="Pharma Ressources/Categories Icons/category-bucco.png" class="img-fluid imga5" alt="">
+                        <h6 class="mb-0">BUCCO-DENTAIRE</h6>
+                    </div>
+                    <div class="d-flex align-items-center gap-2  ">
+                        <img src="Pharma Ressources/Categories Icons/category-soins.png" class="img-fluid  imga5"
+                            alt="">
+                        <h6>BUCCO-DENTAIRE</h6>
+                    </div>
+                    <div class="d-flex align-items-center gap-2 ">
+                        <img src="Pharma Ressources/Categories Icons/category-huiles.png" class="img-fluid  imga5"
+                            alt="">
+                        <h6>BUCCO-DENTAIRE</h6>
+                    </div>
+                    <div class="d-flex align-items-center gap-2  ">
+                        <img src="Pharma Ressources/Categories Icons/category-médicaments.png" class="img-fluid  imga5"
+                            alt="">
+                        <h6>BUCCO-DENTAIRE</h6>
+                    </div>
+                    <div class="d-flex align-items-center gap-2  ">
+                        <img src="Pharma Ressources/Categories Icons/category-sirop.png" class="img-fluid  imga5"
+                            alt="">
+                        <h6>BUCCO-DENTAIRE</h6>
+                    </div>
+                    <div class="d-flex align-items-center gap-2  ">
+                        <img src="Pharma Ressources/Categories Icons/category-protection.png" class="img-fluid  imga5"
+                            alt="">
+                        <h6>BUCCO-DENTAIRE</h6>
+                    </div>
+                    <div class="d-flex align-items-center gap-2  ">
+                        <img src="Pharma Ressources/Categories Icons/category-dispositif.png" class="img-fluid  imga5"
+                            alt="">
+                        <h6>BUCCO-DENTAIRE</h6>
+                    </div>
+                    <div class="d-flex align-items-center gap-2  ">
+                        <img src="Pharma Ressources/Categories Icons/category-vitamin.png" class="img-fluid  imga5"
+                            alt="">
+                        <h6>BUCCO-DENTAIRE</h6>
+                    </div>
+                        </div>
+                        <!-- Bouton prix -->
+                        <div class="filter-title mt-4 fw-bold" data-bs-toggle="collapse" data-bs-target="#prix">
+                            FILTRER PAR PRIX
+                            <i class="bi bi-chevron-down"></i>
+                        </div>
+                        <!-- Contenu prix -->
+                        <div id="prix" class="collapse mt-3">
+                            <input type="range" class="w-75">
+                            <div class="d-flex justify-content-between w-75">
+                                <p class="small">1000 FCFA - 100000 FCFA</p>
+                                <p class="small">FILTRER</p>
+                            </div>
+                        </div>
+                        <img src="Pharma Ressources/Home-Images/pub-1.jpg" class="img-fluid mt-4 publi" alt="">
+                    </div>
+                </div>
+            </div>
+
+
+            <!-- Contenu -->
+            <div class="col-12 col-lg-9 p-3">
+
+                <div class="d-flex flex-column flex-md-row justify-content-between align-items-center mb-4">
+
+                    <div class="d-flex gap-2 align-items-center mb-3 mb-md-0">
+                        <img src="Pharma Ressources/Categories Icons/menu.png" class="img-fluid imga6" alt="">
+
+                        <img src="Pharma Ressources/Categories Icons/menu-list.png" class="img-fluid imga6" alt="">
+
+                        <h6 class="mb-0">1-9 sur 150 éléments visibles</h6>
+                    </div>
+                    <form method="get" action="">
+                        <p>
+
+                            <select name="pays" id="pays" class="p-2 rounded">
+                                <option value="espagne">Trier par Nom</option>
+                            </select>
+                        </p>
+                    </form>
+
+                </div>
+                <div class="row g-4">
+
+                    <div class="col-12 col-md-6 col-lg-4">
+                        <a href="detail-chop.html" class="text-decoration-none">
+                            <div class="bg-white rounded shadow-lg p-4 h-100">
+                                <div class="d-flex flex-column gap-2 justify-content-between h-100">
+                                    <div class="d-flex BUT1 align-items-center justify-content-between">
+                                        <p>New</p>
+                                        <p>-20%</p>
+                                    </div>
+
+                                    <div class="d-flex justify-content-center">
+                                        <img src="Pharma Ressources/Product-Images/product2.jpg" class="img-fluid imga7"
+                                            alt="">
+                                    </div>
+
+                                    <div class="etoil text-end">
+                                        <i class="bi bi-star-fill"></i>
+                                        <i class="bi bi-star-fill"></i>
+                                        <i class="bi bi-star-fill"></i>
+                                        <i class="bi bi-star-half"></i>
+                                        <i class="bi bi-star"></i>
+                                    </div>
+
+                                    <h5 class="m-0 text-black">Nom du produit</h5>
+                                    <h5 class="text-center BUT1">PRICE</h5>
+
+                                    <button class="btn BUT princi-color text-white w-100">
+                                        ADD TO CART
+                                    </button>
+
+                                    <div class="d-flex justify-content-between text-black">
+                                        <small>Aperçu du produit</small>
+                                        <small>Ajouter à la liste de souhaits</small>
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+
+                    <div class="col-12 col-md-6 col-lg-4">
+                        <a href="detail-chop.html" class="text-decoration-none">
+                            <div class="bg-white rounded shadow-lg p-4 h-100">
+                                <div class="d-flex flex-column gap-2 justify-content-between h-100">
+                                    <div class="d-flex BUT1 align-items-center justify-content-between">
+                                        <p>New</p>
+                                        <p>-20%</p>
+                                    </div>
+
+                                    <div class="d-flex justify-content-center">
+                                        <img src="Pharma Ressources/Product-Images/product2.jpg" class="img-fluid imga7"
+                                            alt="">
+                                    </div>
+
+                                    <div class="etoil text-end">
+                                        <i class="bi bi-star-fill"></i>
+                                        <i class="bi bi-star-fill"></i>
+                                        <i class="bi bi-star-fill"></i>
+                                        <i class="bi bi-star-half"></i>
+                                        <i class="bi bi-star"></i>
+                                    </div>
+
+                                    <h5 class="m-0 text-black">Nom du produit</h5>
+                                    <h5 class="text-center BUT1">PRICE</h5>
+
+                                    <button class="btn BUT princi-color text-white w-100">
+                                        ADD TO CART
+                                    </button>
+
+                                    <div class="d-flex justify-content-between text-black">
+                                        <small>Aperçu du produit</small>
+                                        <small>Ajouter à la liste de souhaits</small>
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+
+                    <div class="col-12 col-md-6 col-lg-4">
+                        <a href="detail-chop.html" class="text-decoration-none">
+                            <div class="bg-white rounded shadow-lg p-4 h-100">
+                                <div class="d-flex flex-column gap-2 justify-content-between h-100">
+                                    <div class="d-flex BUT1 align-items-center justify-content-between">
+                                        <p>New</p>
+                                        <p>-20%</p>
+                                    </div>
+
+                                    <div class="d-flex justify-content-center">
+                                        <img src="Pharma Ressources/Product-Images/product2.jpg" class="img-fluid imga7"
+                                            alt="">
+                                    </div>
+
+                                    <div class="etoil text-end">
+                                        <i class="bi bi-star-fill"></i>
+                                        <i class="bi bi-star-fill"></i>
+                                        <i class="bi bi-star-fill"></i>
+                                        <i class="bi bi-star-half"></i>
+                                        <i class="bi bi-star"></i>
+                                    </div>
+
+                                    <h5 class="m-0 text-black">Nom du produit</h5>
+                                    <h5 class="text-center BUT1">PRICE</h5>
+
+                                    <button class="btn BUT princi-color text-white w-100">
+                                        ADD TO CART
+                                    </button>
+
+                                    <div class="d-flex justify-content-between text-black">
+                                        <small>Aperçu du produit</small>
+                                        <small>Ajouter à la liste de souhaits</small>
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+
+                    <div class="col-12 col-md-6 col-lg-4">
+                        <a href="detail-chop.html" class="text-decoration-none">
+                            <div class="bg-white rounded shadow-lg p-4 h-100">
+                                <div class="d-flex flex-column gap-2 justify-content-between h-100">
+                                    <div class="d-flex BUT1 align-items-center justify-content-between">
+                                        <p>New</p>
+                                        <p>-20%</p>
+                                    </div>
+
+                                    <div class="d-flex justify-content-center">
+                                        <img src="Pharma Ressources/Product-Images/product2.jpg" class="img-fluid imga7"
+                                            alt="">
+                                    </div>
+
+                                    <div class="etoil text-end">
+                                        <i class="bi bi-star-fill"></i>
+                                        <i class="bi bi-star-fill"></i>
+                                        <i class="bi bi-star-fill"></i>
+                                        <i class="bi bi-star-half"></i>
+                                        <i class="bi bi-star"></i>
+                                    </div>
+
+                                    <h5 class="m-0 text-black">Nom du produit</h5>
+                                    <h5 class="text-center BUT1">PRICE</h5>
+
+                                    <button class="btn BUT princi-color text-white w-100">
+                                        ADD TO CART
+                                    </button>
+
+                                    <div class="d-flex justify-content-between text-black">
+                                        <small>Aperçu du produit</small>
+                                        <small>Ajouter à la liste de souhaits</small>
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+
+                    <div class="col-12 col-md-6 col-lg-4">
+                        <a href="detail-chop.html" class="text-decoration-none">
+                            <div class="bg-white rounded shadow-lg p-4 h-100">
+                                <div class="d-flex flex-column gap-2 justify-content-between h-100">
+                                    <div class="d-flex BUT1 align-items-center justify-content-between">
+                                        <p>New</p>
+                                        <p>-20%</p>
+                                    </div>
+
+                                    <div class="d-flex justify-content-center">
+                                        <img src="Pharma Ressources/Product-Images/product2.jpg" class="img-fluid imga7"
+                                            alt="">
+                                    </div>
+
+                                    <div class="etoil text-end">
+                                        <i class="bi bi-star-fill"></i>
+                                        <i class="bi bi-star-fill"></i>
+                                        <i class="bi bi-star-fill"></i>
+                                        <i class="bi bi-star-half"></i>
+                                        <i class="bi bi-star"></i>
+                                    </div>
+
+                                    <h5 class="m-0 text-black">Nom du produit</h5>
+                                    <h5 class="text-center BUT1">PRICE</h5>
+
+                                    <button class="btn BUT princi-color text-white w-100">
+                                        ADD TO CART
+                                    </button>
+
+                                    <div class="d-flex justify-content-between text-black">
+                                        <small>Aperçu du produit</small>
+                                        <small>Ajouter à la liste de souhaits</small>
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+
+                    <div class="col-12 col-md-6 col-lg-4">
+                        <a href="detail-chop.html" class="text-decoration-none">
+                            <div class="bg-white rounded shadow-lg p-4 h-100">
+                                <div class="d-flex flex-column gap-2 justify-content-between h-100">
+                                    <div class="d-flex BUT1 align-items-center justify-content-between">
+                                        <p>New</p>
+                                        <p>-20%</p>
+                                    </div>
+
+                                    <div class="d-flex justify-content-center">
+                                        <img src="Pharma Ressources/Product-Images/product2.jpg" class="img-fluid imga7"
+                                            alt="">
+                                    </div>
+
+                                    <div class="etoil text-end">
+                                        <i class="bi bi-star-fill"></i>
+                                        <i class="bi bi-star-fill"></i>
+                                        <i class="bi bi-star-fill"></i>
+                                        <i class="bi bi-star-half"></i>
+                                        <i class="bi bi-star"></i>
+                                    </div>
+
+                                    <h5 class="m-0 text-black">Nom du produit</h5>
+                                    <h5 class="text-center BUT1">PRICE</h5>
+
+                                    <button class="btn BUT princi-color text-white w-100">
+                                        ADD TO CART
+                                    </button>
+
+                                    <div class="d-flex justify-content-between text-black">
+                                        <small>Aperçu du produit</small>
+                                        <small>Ajouter à la liste de souhaits</small>
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+
+                    <div class="col-12 col-md-6 col-lg-4">
+                        <a href="detail-chop.html" class="text-decoration-none">
+                            <div class="bg-white rounded shadow-lg p-4 h-100">
+                                <div class="d-flex flex-column gap-2 justify-content-between h-100">
+                                    <div class="d-flex BUT1 align-items-center justify-content-between">
+                                        <p>New</p>
+                                        <p>-20%</p>
+                                    </div>
+
+                                    <div class="d-flex justify-content-center">
+                                        <img src="Pharma Ressources/Product-Images/product2.jpg" class="img-fluid imga7"
+                                            alt="">
+                                    </div>
+
+                                    <div class="etoil text-end">
+                                        <i class="bi bi-star-fill"></i>
+                                        <i class="bi bi-star-fill"></i>
+                                        <i class="bi bi-star-fill"></i>
+                                        <i class="bi bi-star-half"></i>
+                                        <i class="bi bi-star"></i>
+                                    </div>
+
+                                    <h5 class="m-0 text-black">Nom du produit</h5>
+                                    <h5 class="text-center BUT1">PRICE</h5>
+
+                                    <button class="btn BUT princi-color text-white w-100">
+                                        ADD TO CART
+                                    </button>
+
+                                    <div class="d-flex justify-content-between text-black">
+                                        <small>Aperçu du produit</small>
+                                        <small>Ajouter à la liste de souhaits</small>
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+
+                    <div class="col-12 col-md-6 col-lg-4">
+                        <a href="detail-chop.html" class="text-decoration-none">
+                            <div class="bg-white rounded shadow-lg p-4 h-100">
+                                <div class="d-flex flex-column gap-2 justify-content-between h-100">
+                                    <div class="d-flex BUT1 align-items-center justify-content-between">
+                                        <p>New</p>
+                                        <p>-20%</p>
+                                    </div>
+
+                                    <div class="d-flex justify-content-center">
+                                        <img src="Pharma Ressources/Product-Images/product2.jpg" class="img-fluid imga7"
+                                            alt="">
+                                    </div>
+
+                                    <div class="etoil text-end">
+                                        <i class="bi bi-star-fill"></i>
+                                        <i class="bi bi-star-fill"></i>
+                                        <i class="bi bi-star-fill"></i>
+                                        <i class="bi bi-star-half"></i>
+                                        <i class="bi bi-star"></i>
+                                    </div>
+
+                                    <h5 class="m-0 text-black">Nom du produit</h5>
+                                    <h5 class="text-center BUT1">PRICE</h5>
+
+                                    <button class="btn BUT princi-color text-white w-100">
+                                        ADD TO CART
+                                    </button>
+
+                                    <div class="d-flex justify-content-between text-black">
+                                        <small>Aperçu du produit</small>
+                                        <small>Ajouter à la liste de souhaits</small>
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+
+                    <div class="col-12 col-md-6 col-lg-4">
+                        <a href="detail-chop.html" class="text-decoration-none">
+                            <div class="bg-white rounded shadow-lg p-4 h-100">
+                                <div class="d-flex flex-column gap-2 justify-content-between h-100">
+                                    <div class="d-flex BUT1 align-items-center justify-content-between">
+                                        <p>New</p>
+                                        <p>-20%</p>
+                                    </div>
+
+                                    <div class="d-flex justify-content-center">
+                                        <img src="Pharma Ressources/Product-Images/product2.jpg" class="img-fluid imga7"
+                                            alt="">
+                                    </div>
+
+                                    <div class="etoil text-end">
+                                        <i class="bi bi-star-fill"></i>
+                                        <i class="bi bi-star-fill"></i>
+                                        <i class="bi bi-star-fill"></i>
+                                        <i class="bi bi-star-half"></i>
+                                        <i class="bi bi-star"></i>
+                                    </div>
+
+                                    <h5 class="m-0 text-black">Nom du produit</h5>
+                                    <h5 class="text-center BUT1">PRICE</h5>
+
+                                    <button class="btn BUT princi-color text-white w-100">
+                                        ADD TO CART
+                                    </button>
+
+                                    <div class="d-flex justify-content-between text-black">
+                                        <small>Aperçu du produit</small>
+                                        <small>Ajouter à la liste de souhaits</small>
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+
+                    <div class="col-12 col-md-6 col-lg-4">
+                        <a href="detail-chop.html" class="text-decoration-none">
+                            <div class="bg-white rounded shadow-lg p-4 h-100">
+                                <div class="d-flex flex-column gap-2 justify-content-between h-100">
+                                    <div class="d-flex BUT1 align-items-center justify-content-between">
+                                        <p>New</p>
+                                        <p>-20%</p>
+                                    </div>
+
+                                    <div class="d-flex justify-content-center">
+                                        <img src="Pharma Ressources/Product-Images/product2.jpg" class="img-fluid imga7"
+                                            alt="">
+                                    </div>
+
+                                    <div class="etoil text-end">
+                                        <i class="bi bi-star-fill"></i>
+                                        <i class="bi bi-star-fill"></i>
+                                        <i class="bi bi-star-fill"></i>
+                                        <i class="bi bi-star-half"></i>
+                                        <i class="bi bi-star"></i>
+                                    </div>
+
+                                    <h5 class="m-0 text-black">Nom du produit</h5>
+                                    <h5 class="text-center BUT1">PRICE</h5>
+
+                                    <button class="btn BUT princi-color text-white w-100">
+                                        ADD TO CART
+                                    </button>
+
+                                    <div class="d-flex justify-content-between text-black">
+                                        <small>Aperçu du produit</small>
+                                        <small>Ajouter à la liste de souhaits</small>
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+
+                    <div class="col-12 col-md-6 col-lg-4">
+                        <a href="detail-chop.html" class="text-decoration-none">
+                            <div class="bg-white rounded shadow-lg p-4 h-100">
+                                <div class="d-flex flex-column gap-2 justify-content-between h-100">
+                                    <div class="d-flex BUT1 align-items-center justify-content-between">
+                                        <p>New</p>
+                                        <p>-20%</p>
+                                    </div>
+
+                                    <div class="d-flex justify-content-center">
+                                        <img src="Pharma Ressources/Product-Images/product2.jpg" class="img-fluid imga7"
+                                            alt="">
+                                    </div>
+
+                                    <div class="etoil text-end">
+                                        <i class="bi bi-star-fill"></i>
+                                        <i class="bi bi-star-fill"></i>
+                                        <i class="bi bi-star-fill"></i>
+                                        <i class="bi bi-star-half"></i>
+                                        <i class="bi bi-star"></i>
+                                    </div>
+
+                                    <h5 class="m-0 text-black">Nom du produit</h5>
+                                    <h5 class="text-center BUT1">PRICE</h5>
+
+                                    <button class="btn BUT princi-color text-white w-100">
+                                        ADD TO CART
+                                    </button>
+
+                                    <div class="d-flex justify-content-between text-black">
+                                        <small>Aperçu du produit</small>
+                                        <small>Ajouter à la liste de souhaits</small>
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+
+                    <div class="col-12 col-md-6 col-lg-4">
+                        <a href="detail-chop.html" class="text-decoration-none">
+                            <div class="bg-white rounded shadow-lg p-4 h-100">
+                                <div class="d-flex flex-column gap-2 justify-content-between h-100">
+                                    <div class="d-flex BUT1 align-items-center justify-content-between">
+                                        <p>New</p>
+                                        <p>-20%</p>
+                                    </div>
+
+                                    <div class="d-flex justify-content-center">
+                                        <img src="Pharma Ressources/Product-Images/product2.jpg" class="img-fluid imga7"
+                                            alt="">
+                                    </div>
+
+                                    <div class="etoil text-end">
+                                        <i class="bi bi-star-fill"></i>
+                                        <i class="bi bi-star-fill"></i>
+                                        <i class="bi bi-star-fill"></i>
+                                        <i class="bi bi-star-half"></i>
+                                        <i class="bi bi-star"></i>
+                                    </div>
+
+                                    <h5 class="m-0 text-black">Nom du produit</h5>
+                                    <h5 class="text-center BUT1">PRICE</h5>
+
+                                    <button class="btn BUT princi-color text-white w-100">
+                                        ADD TO CART
+                                    </button>
+
+                                    <div class="d-flex justify-content-between text-black">
+                                        <small>Aperçu du produit</small>
+                                        <small>Ajouter à la liste de souhaits</small>
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+
+                    <div class="d-flex align-items-center justify-content-start">
+                        <p class="fw-bold">1-2-NEXT></p>
+
+                    </div>
+
+
+                </div>
+            </div>
+
+
+            <div>
+                <div class="container">
+                    <div class=" container row g-4 mt-4 ">
+                        <span class="fw-bold-ls fs-2">Ce que disent nos clients</span>
+                        <div class="col-12 col-md-6 col-lg-3">
+                            <div class="d-flex gap-2 flex-column align-items-center justify-content-center">
+                                <div class="etoil">
+                                    <i class="bi bi-star-fill"></i>
+                                    <i class="bi bi-star-fill"></i>
+                                    <i class="bi bi-star-fill"></i>
+                                    <i class="bi bi-star-half"></i>
+                                    <i class="bi bi-star"></i>
+                                </div>
+                                <P>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae facere aperiam omnis
+                                    earum iure ex
+                                    mollitia alias expedita sed fuga minus minima animi maiores, eum sint? Cum, non
+                                    fuga? Sed.</P>
+                                <img src="Pharma Ressources/Home-Images/testimonials-4.jpg" class="img-fluid SECT1  "
+                                    alt="">
+
+                            </div>
+                        </div>
+                        <div class="col-12 col-md-6 col-lg-3">
+                            <div class="d-flex gap-2 flex-column align-items-center justify-content-center">
+                                <div class="etoil">
+                                    <i class="bi bi-star-fill"></i>
+                                    <i class="bi bi-star-fill"></i>
+                                    <i class="bi bi-star-fill"></i>
+                                    <i class="bi bi-star-half"></i>
+                                    <i class="bi bi-star"></i>
+                                </div>
+                                <P>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae facere aperiam omnis
+                                    earum iure ex
+                                    mollitia alias expedita sed fuga minus minima animi maiores, eum sint? Cum, non
+                                    fuga? Sed.</P>
+                                <img src="Pharma Ressources/Home-Images/testimonials-5.jpg" class="img-fluid SECT1  "
+                                    alt="">
+
+                            </div>
+                        </div>
+                        <div class="col-12 col-md-6 col-lg-3">
+                            <div class="d-flex gap-2 flex-column align-items-center justify-content-center">
+                                <div class="etoil">
+                                    <i class="bi bi-star-fill"></i>
+                                    <i class="bi bi-star-fill"></i>
+                                    <i class="bi bi-star-fill"></i>
+                                    <i class="bi bi-star-half"></i>
+                                    <i class="bi bi-star"></i>
+                                </div>
+                                <P>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae facere aperiam omnis
+                                    earum iure ex
+                                    mollitia alias expedita sed fuga minus minima animi maiores, eum sint? Cum, non
+                                    fuga? Sed.</P>
+                                <img src="Pharma Ressources/Home-Images/testimonials-6.jpg" class="img-fluid SECT1 "
+                                    alt="">
+
+                            </div>
+                        </div>
+                        <div class="col-12 col-md-6 col-lg-3">
+                            <div class="d-flex gap-2 flex-column align-items-center justify-content-center">
+                                <div class="etoil">
+                                    <i class="bi bi-star-fill"></i>
+                                    <i class="bi bi-star-fill"></i>
+                                    <i class="bi bi-star-fill"></i>
+                                    <i class="bi bi-star-half"></i>
+                                    <i class="bi bi-star"></i>
+                                </div>
+                                <P>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae facere aperiam omnis
+                                    earum iure ex
+                                    mollitia alias expedita sed fuga minus minima animi maiores, eum sint? Cum, non
+                                    fuga? Sed.</P>
+                                <img src="Pharma Ressources/Home-Images/testimonials-7.jpg" class="img-fluid SECT1 "
+                                    alt="">
+
+                            </div>
+                        </div>
+
+                        <!-- Répéter les autres cartes avec les mêmes classes -->
+                    </div>
+
+                    <div class=" container d-flex flex-column justify-content-center align-items-center g-4 mt-4 ">
+                        <h5 class="fw-bold-ls fs-4">Inscrivez vous à notre newsletter</h5>
+                        <h6>Rejoignez 60 000+ nouveau adhérents et obtenez un nouveau coupon de réduction chaque samedi
+                        </h6>
+                    </div>
+
+                    <div class=" container align-items-center justify-content-between row g-4 mt-4 ">
+                        <div class="col-12 col-md-6 col-lg-3">
+                            <div class="d-flex gap-2 align-items-center justify-content-center">
+                                <i class="bi bi-globe" style="font-size: 70px;"></i>
+                                <div class="d-flex flex-column w-100 ">
+                                    <h6>Niamey, Niger</h6>
+                                    <small>Niamey, Niger</small>
+                                    <h6>BP 12000</h6>
+
+                                </div>
+
+                            </div>
+                        </div>
+                        <div class="col-12 col-md-6 col-lg-3">
+                            <div class="d-flex gap-2 align-items-center justify-content-center">
+                                <i class="bi bi-phone-vibrate" style="font-size: 70px;"></i>
+                                <div class="d-flex flex-column w-100 ">
+                                    <h6>Pour tous contact</h6>
+                                    <small>Consulter ce numero</small>
+                                    <h6>+227 00 00 00 00</h6>
+
+                                </div>
+
+                            </div>
+                        </div>
+                        <div class="col-12 col-md-6 col-lg-3  W-50">
+                            <div class="d-flex gap-2 align-items-center justify-content-center">
+                                <div class="d-flex flex-column w-100 ">
+                                    <h6>Télécharger notre app maintenant</h6>
+                                    <div class="d-flex gap-2 align-items-center">
+                                        <img src="Pharma Ressources/Home-Images/app-store.png" class="img-fluid imga"
+                                            alt="">
+                                        <img src="Pharma Ressources/Home-Images/google-play.png" class="img-fluid imga"
+                                            alt="">
+                                    </div>
+
+                                </div>
+
+                            </div>
+                        </div>
+                        <!-- Répéter les autres cartes avec les mêmes classes -->
+                    </div>
+                </div>
+
+            </div>
+
+            <hr>
+
+            <div class="container-fluid row g-4 mt-4 ">
+                <div class="col-12 col-md-6 col-lg-2 logo">
+                    <div class="d-flex gap-2 flex-column align-items-start justify-content-center">
+                        <img src="Pharma Ressources/Home-Images/Brand-Logo.png" class="img-fluid" alt="">
+                        <P>Pharma-Shop est votre pharmacie en ligne de confiance au Niger. Nous proposons une large
+                            gamme de
+                            produits pharmaceutiques et parapharmaceutiques de qualité.</P>
+                    </div>
+                </div>
+                <div class="col-12 col-md-6 col-lg-2">
+                    <div class="d-flex gap-2 flex-column align-items-start justify-content-center">
+                        <h4>INFORMATIONS</h4>
+                        <ul class="navbar-nav">
+                            <li class="nav-item">
+                                <a class="nav-link m-0 p-0" href="#">Dernieres Nouvelles </a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Nos Pharmacie </a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link m-0 p-0" href="#">Programme d'affiliations </a>
+                            </li>
+
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Carrieres</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-12 col-md-6 col-lg-2">
+                    <div class="d-flex gap-2 flex-column align-items-start justify-content-center">
+                        <div class="d-flex gap-2 flex-column align-items-start justify-content-center">
+                            <h4>CATÉGORIES</h4>
+                            <ul class="navbar-nav">
+                                <li class="nav-item ">
+                                    <a class="nav-link m-0 p-0" href="#">Mediacament </a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#">Beauté & Soins </a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link  m-0 p-0" href="#">Bébé & maman </a>
+                                </li>
+
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#">Hygiene</a>
+                                </li>
+                            </ul>
+                        </div>
+
+                    </div>
+                </div>
+                <div class="col-12 col-md-6 col-lg-2">
+                    <div class="d-flex gap-2 flex-column align-items-start justify-content-center">
+                        <div class="d-flex gap-2 flex-column align-items-start justify-content-center">
+                            <h4>SERVICES</h4>
+                            <ul class="navbar-nav">
+                                <li class="nav-item">
+                                    <a class="nav-link p-0 m-0" href="#">Livraison </a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#">Retour </a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link p-0 m-0" href="#">Contact </a>
+                                </li>
+
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#">FAQ</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-md-6 col-lg-2">
+                    <div class="d-flex gap-2 flex-column align-items-start justify-content-center">
+                        <div class="d-flex gap-2 flex-column align-items-start justify-content-center">
+                            <h4>SUIVEZ-NOUS</h4>
+                            <ul class="navbar-nav">
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#"> <i class="bi bi-facebook "></i> facebook </a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#"> <i class="bi bi-twitter-x"></i> twitter </a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#"> <i class="bi bi-instagram"></i> instagram </a>
+                                </li>
+
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#"> <i class="bi bi-google"></i> google </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="d-flex align-items-center justify-content-center gap-2">
+                    <h6>Nos partenaires de paiement</h6>
+                    <img src="Pharma Ressources/Home-Images/payment.png" class="img-fluid imga1" alt="">
+                </div>
+
+                <!-- Répéter les autres cartes avec les mêmes classes -->
+            </div>
+
+            <hr>
+            <p>© 2026 Pharma-Shop • Tous droits réservés</p>
+
+
+
+
+
+
+
+            <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</body>
+
+</html>

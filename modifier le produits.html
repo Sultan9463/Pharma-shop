@@ -1,0 +1,545 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>modifier le produit-Shop</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="style.css">
+
+<body class="p-2">
+   
+
+    <header class="d-flex justify-content-between align-items-center flex-wrap text-white princi-color p-3">
+
+        <h3 class="m-0 fs-4 fs-lg-2">
+           Panneau Administrateur > Options du site web
+        </h3>
+
+        <h4 class="m-0 fs-6 fs-lg-4 text-lg-end">
+            Vous êtes connecté en tant que
+            <span class="fs-5 fs-lg-3 fst-italic">
+                Nom du Pharmacien
+            </span>
+        </h4>
+
+    </header>
+
+
+
+
+    <div class="container mt-5 shadow p-4 rounded bg-white">
+
+        <h3>Liste des Produits</h3>
+        <h6 class="text-muted mb-4">
+            Cliquez sur une ligne pour modifier le produit associé. Utilisez la corbeille pour supprimer un produit ou
+            cochez plusieurs produits pour une action groupée.
+        </h6>
+
+        <!-- Barre de recherche et boutons -->
+        <div class="row g-3 align-items-center mb-4">
+
+            <div class="col-12 col-lg-5">
+                <div class="input-group">
+                    <input type="text" class="form-control" placeholder="Recherche...">
+                    <button class="btn btn-primary">
+                        <i class="bi bi-search"></i>
+                    </button>
+                </div>
+            </div>
+
+            <div class="col-12 col-lg-7 text-lg-end">
+                <button class="btn btn-outline-secondary me-2">
+                    <i class="bi bi-printer"></i> Imprimer
+                </button>
+
+                <button class="btn btn-primary">
+                    <i class="bi bi-plus-circle"></i> Ajouter un produit
+                </button>
+            </div>
+
+
+        </div>
+
+
+
+
+        <div class="container mt-4">
+
+            <div class="table-responsive shadow rounded">
+
+                <table class="table table-hover align-middle mb-0">
+
+                    <thead class="table-light">
+
+                        <tr>
+                            <th>
+                                <input type="checkbox">
+                            </th>
+
+                            <th>Image</th>
+
+                            <th>Nom du produit</th>
+
+                            <th>Catégorie</th>
+
+                            <th class="text-center">Action</th>
+                        </tr>
+
+                    </thead>
+
+
+                    <tbody>
+
+                        <!-- Ligne produit -->
+                        <tr data-bs-toggle="offcanvas" data-bs-target="#offcanvasProduit" style="cursor:pointer;">
+
+
+                            <td>
+                                <input type="checkbox" onclick="event.stopPropagation();">
+                            </td>
+
+
+                            <td>
+                                <img src="Pharma Ressources/Product-Images/product11.jpg" class="img-fluid rounded"
+                                    style="width:60px;height:60px;object-fit:cover;" alt="">
+                            </td>
+
+
+                            <td>
+                                Paracétamol
+                            </td>
+
+
+                            <td>
+                                Médicaments
+                            </td>
+
+
+                            <td class="text-center">
+
+                                <button class="btn btn-danger btn-sm" onclick="event.stopPropagation();">
+
+                                    <i class="bi bi-trash"></i>
+                                    Supprimer
+
+                                </button>
+
+                            </td>
+
+
+                        </tr>
+
+
+                    </tbody>
+                    <tbody>
+
+                        <!-- Ligne produit -->
+                        <tr data-bs-toggle="offcanvas" data-bs-target="#offcanvasProduit" style="cursor:pointer;">
+
+
+                            <td>
+                                <input type="checkbox" onclick="event.stopPropagation();">
+                            </td>
+
+
+                            <td>
+                                <img src="Pharma Ressources/Product-Images/product11.jpg" class="img-fluid rounded"
+                                    style="width:60px;height:60px;object-fit:cover;" alt="">
+                            </td>
+
+
+                            <td>
+                                Paracétamol
+                            </td>
+
+
+                            <td>
+                                Médicaments
+                            </td>
+
+
+                            <td class="text-center">
+
+                                <button class="btn btn-danger btn-sm" onclick="event.stopPropagation();">
+
+                                    <i class="bi bi-trash"></i>
+                                    Supprimer
+
+                                </button>
+
+                            </td>
+
+
+                        </tr>
+
+
+                    </tbody>
+                    <tbody>
+
+                        <!-- Ligne produit -->
+                        <tr data-bs-toggle="offcanvas" data-bs-target="#offcanvasProduit" style="cursor:pointer;">
+
+
+                            <td>
+                                <input type="checkbox" onclick="event.stopPropagation();">
+                            </td>
+
+
+                            <td>
+                                <img src="Pharma Ressources/Product-Images/product11.jpg" class="img-fluid rounded"
+                                    style="width:60px;height:60px;object-fit:cover;" alt="">
+                            </td>
+
+
+                            <td>
+                                Paracétamol
+                            </td>
+
+
+                            <td>
+                                Médicaments
+                            </td>
+
+
+                            <td class="text-center">
+
+                                <button class="btn btn-danger btn-sm" onclick="event.stopPropagation();">
+
+                                    <i class="bi bi-trash"></i>
+                                    Supprimer
+
+                                </button>
+
+                            </td>
+
+
+                        </tr>
+
+
+                    </tbody>
+                    <tbody>
+
+                        <!-- Ligne produit -->
+                        <tr data-bs-toggle="offcanvas" data-bs-target="#offcanvasProduit" style="cursor:pointer;">
+
+
+                            <td>
+                                <input type="checkbox" onclick="event.stopPropagation();">
+                            </td>
+
+
+                            <td>
+                                <img src="Pharma Ressources/Product-Images/product11.jpg" class="img-fluid rounded"
+                                    style="width:60px;height:60px;object-fit:cover;" alt="">
+                            </td>
+
+
+                            <td>
+                                Paracétamol
+                            </td>
+
+
+                            <td>
+                                Médicaments
+                            </td>
+
+
+                            <td class="text-center">
+
+                                <button class="btn btn-danger btn-sm" onclick="event.stopPropagation();">
+
+                                    <i class="bi bi-trash"></i>
+                                    Supprimer
+
+                                </button>
+
+                            </td>
+
+
+                        </tr>
+
+
+                    </tbody>
+                    <tbody>
+
+                        <!-- Ligne produit -->
+                        <tr data-bs-toggle="offcanvas" data-bs-target="#offcanvasProduit" style="cursor:pointer;">
+
+
+                            <td>
+                                <input type="checkbox" onclick="event.stopPropagation();">
+                            </td>
+
+
+                            <td>
+                                <img src="Pharma Ressources/Product-Images/product11.jpg" class="img-fluid rounded"
+                                    style="width:60px;height:60px;object-fit:cover;" alt="">
+                            </td>
+
+
+                            <td>
+                                Paracétamol
+                            </td>
+
+
+                            <td>
+                                Médicaments
+                            </td>
+
+
+                            <td class="text-center">
+
+                                <button class="btn btn-danger btn-sm" onclick="event.stopPropagation();">
+
+                                    <i class="bi bi-trash"></i>
+                                    Supprimer
+
+                                </button>
+
+                            </td>
+
+
+                        </tr>
+
+
+                    </tbody>
+                    <tbody>
+
+                        <!-- Ligne produit -->
+                        <tr data-bs-toggle="offcanvas" data-bs-target="#offcanvasProduit" style="cursor:pointer;">
+
+
+                            <td>
+                                <input type="checkbox" onclick="event.stopPropagation();">
+                            </td>
+
+
+                            <td>
+                                <img src="Pharma Ressources/Product-Images/product11.jpg" class="img-fluid rounded"
+                                    style="width:60px;height:60px;object-fit:cover;" alt="">
+                            </td>
+
+
+                            <td>
+                                Paracétamol
+                            </td>
+
+
+                            <td>
+                                Médicaments
+                            </td>
+
+
+                            <td class="text-center">
+
+                                <button class="btn btn-danger btn-sm" onclick="event.stopPropagation();">
+
+                                    <i class="bi bi-trash"></i>
+                                    Supprimer
+
+                                </button>
+
+                            </td>
+
+
+                        </tr>
+
+
+                    </tbody>
+                    <tbody>
+
+                        <!-- Ligne produit -->
+                        <tr data-bs-toggle="offcanvas" data-bs-target="#offcanvasProduit" style="cursor:pointer;">
+
+
+                            <td>
+                                <input type="checkbox" onclick="event.stopPropagation();">
+                            </td>
+
+
+                            <td>
+                                <img src="Pharma Ressources/Product-Images/product11.jpg" class="img-fluid rounded"
+                                    style="width:60px;height:60px;object-fit:cover;" alt="">
+                            </td>
+
+
+                            <td>
+                                Paracétamol
+                            </td>
+
+
+                            <td>
+                                Médicaments
+                            </td>
+
+
+                            <td class="text-center">
+
+                                <button class="btn btn-danger btn-sm" onclick="event.stopPropagation();">
+
+                                    <i class="bi bi-trash"></i>
+                                    Supprimer
+
+                                </button>
+
+                            </td>
+
+
+                        </tr>
+
+
+                    </tbody>
+                    <tbody>
+
+                        <!-- Ligne produit -->
+                        <tr data-bs-toggle="offcanvas" data-bs-target="#offcanvasProduit" style="cursor:pointer;">
+
+
+                            <td>
+                                <input type="checkbox" onclick="event.stopPropagation();">
+                            </td>
+
+
+                            <td>
+                                <img src="Pharma Ressources/Product-Images/product11.jpg" class="img-fluid rounded"
+                                    style="width:60px;height:60px;object-fit:cover;" alt="">
+                            </td>
+
+
+                            <td>
+                                Paracétamol
+                            </td>
+
+
+                            <td>
+                                Médicaments
+                            </td>
+
+
+                            <td class="text-center">
+
+                                <button class="btn btn-danger btn-sm" onclick="event.stopPropagation();">
+
+                                    <i class="bi bi-trash"></i>
+                                    Supprimer
+
+                                </button>
+                            </td>
+                        </tr>
+
+
+                    </tbody>
+
+
+                </table>
+
+            </div>
+
+
+
+        </div>
+
+
+
+        <!-- OFFCANVAS DETAILS PRODUIT -->
+
+        <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasProduit">
+
+
+            <div class="offcanvas-header border-bottom">
+
+
+                <h5 class="offcanvas-title">
+                    Détails du produit
+                </h5>
+
+
+                <button type="button" class="btn-close" data-bs-dismiss="offcanvas">
+                </button>
+
+
+            </div>
+
+
+
+            <div class="offcanvas-body">
+
+
+                <div class="text-center mb-3">
+
+                    <img src="Pharma Ressources/Product-Images/product11.jpg" class="img-fluid rounded"
+                        style="max-height:250px;" alt="">
+
+                </div>
+
+
+
+                <h4 class="fw-bold">
+                    Paracétamol
+                </h4>
+
+
+
+                <hr>
+
+
+                <p>
+                    <strong>Catégorie :</strong>
+                    Médicaments
+                </p>
+
+
+                <p>
+                    <strong>Prix :</strong>
+                    2 500 FCFA
+                </p>
+
+
+                <p>
+                    <strong>Stock :</strong>
+                    120 unités
+                </p>
+
+
+
+                <p>
+                    <strong>Description :</strong>
+                    Médicament utilisé pour soulager les douleurs
+                    et réduire la fièvre.
+                </p>
+
+
+
+                <div class="d-flex gap-2 mt-4">
+                    <button class="btn btn-primary w-50">
+                        <i class="bi bi-pencil"></i>
+                        Modifier
+                    </button>
+                    <button class="btn btn-danger w-50">
+                        <i class="bi bi-trash"></i>
+                        Supprimer
+                    </button>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+
+
+
+
+
+
+
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</body>
+
+</html>

@@ -1,0 +1,380 @@
+.princi-color {
+    background-color: #3EB3BD;
+}
+
+.princi {
+    color: #3EB3BD;
+}
+
+.recherche {
+    width: 500px;
+    border-top-left-radius: 40px;
+    border-bottom-left-radius: 40px;
+    padding: 10px;
+}
+
+
+.recherche1 {
+
+    border-top-right-radius: 40px;
+    border-bottom-right-radius: 40px;
+    padding: 10px;
+}
+
+.imga {
+    width: 80px;
+}
+
+.imga {
+    width: 100px;
+}
+
+.imga3 {
+    width: 200px;
+}
+
+.imga4 {
+    width: 100px;
+}
+
+.imga5 {
+    width: 50px;
+}
+
+.imga6 {
+    width: 30px;
+}
+
+.imga7 {
+    width: 180px;
+}
+
+.rong {
+    width: 60px;
+    height: 60px;
+    background-color: #3EB3BD;
+    border-radius: 90%;
+}
+
+.BUT:hover {
+    background-color: #3EB3BD !important;
+}
+
+.BUT1 {
+    color: #3EB3BD;
+}
+
+.rong1 {
+    width: 60px;
+    height: 60px;
+    background-color: #F667AB;
+    border-radius: 90%;
+}
+
+.rong4 {
+    width: 50px;
+    height: 50px;
+    background-color: #FFF;
+    border-radius: 90%;
+}
+
+.rong2 {
+    width: 60px;
+    height: 60px;
+    background-color: #83C946;
+    border-radius: 90%;
+}
+
+.rong3 {
+    width: 60px;
+    height: 60px;
+    background-color: #DE8A29;
+    border-radius: 90%;
+}
+
+.imga1 {
+    width: 250px;
+}
+
+.vita {
+
+    background: linear-gradient(171deg, rgba(36, 173, 93, 1) 50%, rgba(237, 221, 83, 1) 100%);
+}
+
+.vita1 {
+
+    background: linear-gradient(180deg, rgba(64, 194, 206, 1) 34%, rgba(242, 152, 201, 1) 70%);
+}
+
+.bgt {
+    background-color: #FFF !important;
+}
+
+.vita2 {
+
+    background: linear-gradient(157deg, rgba(209, 71, 41, 1) 34%, rgba(217, 136, 27, 1) 70%);
+}
+
+.vita3 {
+
+    background: linear-gradient(157deg, rgba(34, 132, 163, 1) 13%, rgba(145, 218, 225, 1) 64%);
+}
+
+.etoil {
+    color: #FFC109;
+}
+
+
+
+.ronga {
+    width: 60px;
+    height: 60px;
+    background-color: #f5b06a;
+    border-radius: 90%;
+}
+
+.rong1b {
+    width: 60px;
+    height: 60px;
+    background-color: #badeef;
+    border-radius: 90%;
+}
+
+.rong4c {
+    width: 50px;
+    height: 50px;
+    background-color: #eb99ef;
+    border-radius: 90%;
+}
+
+.rong2d {
+    width: 60px;
+    height: 60px;
+    background-color: #f0bb85;
+    border-radius: 90%;
+}
+
+.rong3e {
+    width: 60px;
+    height: 60px;
+    background-color: #abe9c0;
+    border-radius: 90%;
+}
+
+.SECT {
+    width: 170px !important;
+}
+
+.medi {
+    width: 170px !important;
+}
+
+.medi1 {
+    width: 150px !important;
+
+}
+
+.SECT1 {
+    width: 160px !important;
+    border-radius: 100%;
+
+}
+
+.logo {
+    width: 400px !important;
+}
+
+
+
+
+/* Offcanvas */
+
+.mon-offcanvas {
+
+    position: fixed;
+
+    top: 0;
+    right: -420px;
+
+    width: 400px;
+    height: 100vh;
+
+    background: #fff;
+
+    box-shadow: -5px 0 20px rgba(0, 0, 0, .2);
+
+    padding: 25px;
+
+    transition: .4s;
+
+    z-index: 1050;
+
+    overflow: auto;
+
+}
+
+/* Lorsque le checkbox est coché */
+
+#offcanvasProduit:checked~.mon-offcanvas {
+
+    right: 0;
+
+}
+
+
+
+
+
+
+
+
+
+.menu-item {
+    position: relative;
+    width: 400px;
+}
+
+
+/* Carte principale */
+.princi-color {
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+
+
+/* Hover desktop */
+.hover-card {
+    position: absolute;
+    left: 96%;
+    /* Se place à droite */
+    bottom: 20%;
+    width: 380px;
+    justify-content: center;
+    border: 1px solid black;
+    background-color: white;
+    padding: 10px;
+    border-radius: 10px;
+    box-shadow: 0 10px 25px rgba(140, 139, 139, 0.2);
+
+    opacity: 0;
+    visibility: hidden;
+    transform: translateX(20px);
+
+    transition: .3s ease;
+}
+
+
+/* apparition au hover */
+.menu-item:hover .hover-card {
+    opacity: 1;
+    visibility: visible;
+}
+
+.sultan {
+    display: none !important;
+}
+
+/* Tablette */
+@media(max-width:1024px) {
+
+    .menu-item {
+        width: 300px;
+    }
+
+    .hover-card {
+        left: 50%;
+        top: 8%;
+        width: 80%;
+    }
+
+    .menu-item:hover .hover-card {
+        opacity: 1;
+        visibility: visible;
+    }
+
+}
+
+
+/* Mobile */
+@media(max-width:576px) {
+
+    .menu-container {
+        width: 100%;
+        padding: 20px;
+    }
+
+    .ICONE{
+        display: none !important;
+    }
+
+
+    .sultan1 {
+        display: none !important;
+    }
+
+    .sultan {
+        display: flex !important;
+    }
+
+
+    .publi {
+        display: none;
+    }
+
+    .LOGO {
+        width: 150px;
+    }
+
+
+    .menu-item {
+        width: 100%;
+    }
+
+
+    /* désactive le hover */
+    .hover-card {
+        position: relative;
+        left: 0;
+        top: 10px;
+
+        opacity: 1;
+        visibility: visible;
+
+        width: 100%;
+        margin-bottom: 20px;
+    }
+
+
+    .princi-color h3 {
+        font-size: 20px;
+    }
+
+}
+
+
+
+
+
+
+
+
+@media (max-width: 992px) {
+    .conect {
+        display: none;
+    }
+
+    .bar1 {
+        display: none !important;
+    }
+
+    .bar2 {
+        flex-direction: column;
+    }
+
+
+
+
+
+
+}

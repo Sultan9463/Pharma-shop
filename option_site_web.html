@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>admin-Shop</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="style.css">
+
+<body class="p-2">
+    <header class="d-flex justify-content-between align-items-center flex-wrap text-white princi-color p-3">
+
+        <h3 class="m-0 fs-4 fs-lg-2">
+            Panneau Administrateur > Options du site web
+        </h3>
+
+        <h4 class="m-0 fs-6 fs-lg-4 text-lg-end">
+            Vous êtes connecté en tant que
+            <span class="fs-5 fs-lg-3 fst-italic">
+                Nom du Pharmacien
+            </span>
+        </h4>
+
+    </header>
+
+    <div class="container mt-5 shadow p-4 rounded bg-white">
+        <h3>Options du site web</h3>
+        <h6>Modifier les options de contact</h6>
+
+        <form action="">
+            <!-- Première ligne -->
+            <div class="row g-3">
+
+                <div class="col-md-6">
+                    <label class="form-label">Numéro de téléphone</label>
+                    <input type="text" class="form-control">
+                </div>
+
+                <div class="col-md-6">
+                    <label class="form-label">Adresse e-mail</label>
+                    <input type="email" class="form-control">
+                </div>
+
+                <!-- Deuxième ligne -->
+                <div class="col-md-6">
+                    <label class="form-label">Adresse</label>
+                    <input type="text" class="form-control">
+                </div>
+
+                <div class="col-md-6">
+                    <label class="form-label">Localisation : Ville</label>
+                    <input type="text" class="form-control">
+                </div>
+
+                <!-- Description -->
+                <div class="col-12">
+                    <label class="form-label">Description du bas de page</label>
+                    <textarea class="form-control" rows="5">
+Pharma-Shop est fière d'être la meilleure pharmacie en ligne au Niger avec une gamme de produits de haute qualité.
+                </textarea>
+                </div>
+
+                <!-- Image -->
+                <div class="col-12">
+                    <h5>
+                        Modifier l'affiche publicitaire <br>
+                        <small class="text-muted">
+                            Cliquez sur l'image pour la modifier
+                        </small>
+                    </h5>
+
+                    <div class="d-flex gap-3 align-items-center flex-wrap">
+
+                        <img src="Pharma Ressources/Home-Images/pub-1.jpg" class="img-fluid rounded border"
+                            style="max-width:250px; cursor:pointer;">
+
+                        <div class="border rounded d-flex justify-content-center align-items-center"
+                            style="width:250px;height:160px;cursor:pointer;">
+                            <span class="fs-1">+</span>
+                        </div>
+
+                    </div>
+                </div>
+
+                <!-- Boutons -->
+                <div class="col-12 text-end">
+
+                    <button type="reset" class="btn btn-outline-secondary">
+                        Annuler
+                    </button>
+
+                    <button type="submit" class="btn btn-primary">
+                        Enregistrer
+                    </button>
+
+                </div>
+
+            </div>
+        </form>
+    </div>
+
+
+
+
+
+
+
+
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</body>
+
+</html>
