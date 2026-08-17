@@ -436,11 +436,31 @@
 
 
 /* Mobile */
-@media(max-width:576px) {
+@media(max-width:768px) {
 
     .menu-container {
         width: 100%;
         padding: 20px;
+    }
+
+   .foot{
+    border-left: none !important;
+    padding-left: 0px !important;
+    padding: 20px !important;
+   }
+    .pied1{
+       border-left: none !important;
+        justify-content: start !important;
+        align-items: start !important;
+        padding-left: 0 !important;
+        border-left: none !important;
+    }
+    .pied2{
+        border-left: none !important;
+        justify-content: start !important;
+        align-items: start !important;
+        padding-left: 0 !important;
+        border-left: none !important;
     }
 
     .paie{
