@@ -23,6 +23,10 @@
     padding: 10px;
 }
 
+.carde{
+    width: 300px !important;
+}
+
 
 .product-image {
     width: 100%;
