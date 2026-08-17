@@ -6,6 +6,10 @@
     color: #3EB3BD;
 }
 
+.princi1 {
+    background-color: #3EB3BD;
+}
+
 .recherche {
     width: 500px;
     border-top-left-radius: 40px;
@@ -304,6 +308,73 @@
     display: none !important;
 }
 
+
+
+/* admin */
+
+.menu-container {
+    min-height: 70vh;
+}
+
+.menu-item {
+    position: relative;
+    width: 500px;
+}
+
+.menu-item > a,
+.menu-item > .princi-color {
+    display: block;
+    width: 100%;
+}
+
+.princi-color {
+    cursor: pointer;
+    transition: all 0.3s ease;
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.15);
+}
+
+.princi-color:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 6px 18px rgba(0, 0, 0, 0.2);
+}
+
+/* Carte d'information */
+.hover-card {
+    position: absolute;
+    left: calc(100% + -10px);
+    top: 50%;
+    transform: translateY(-50%) translateX(-10px);
+
+    width: 400px;
+    padding: 15px;
+    border: 1px solid black;
+    color: #333;
+    border-radius: 10px;
+    opacity: 0;
+    visibility: hidden;
+    transition: all 0.3s ease;
+    z-index: 10;
+}
+
+/* Apparition au survol */
+.menu-item:hover .hover-card {
+    opacity: 1;
+    visibility: visible;
+    transform: translateY(-50%) translateX(0);
+}
+
+.hover-card h6 {
+    margin: 0;
+    line-height: 1.5;
+}
+
+
+
+
+
+
+
+
 /* Tablette */
 @media(max-width:1024px) {
 
@@ -323,6 +394,45 @@
     }
 
 }
+
+
+
+@media (max-width: 992px) {
+    .conect {
+        display: none;
+    }
+
+    .bar1 {
+        display: none !important;
+    }
+
+    .bar2 {
+        flex-direction: column;
+    }
+
+
+
+    .menu-item {
+        width: 90%;
+    }
+
+    .hover-card {
+        position: relative;
+        left: 0;
+        top: auto;
+        transform: none;
+        width: 100%;
+        margin-top: 10px;
+
+        opacity: 1;
+        visibility: visible;
+    }
+
+    .menu-item:hover .hover-card {
+        transform: none;
+    }
+}
+
 
 
 /* Mobile */
@@ -386,28 +496,3 @@
 }
 
 
-
-
-
-
-
-
-@media (max-width: 992px) {
-    .conect {
-        display: none;
-    }
-
-    .bar1 {
-        display: none !important;
-    }
-
-    .bar2 {
-        flex-direction: column;
-    }
-
-
-
-
-
-
-}
