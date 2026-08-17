@@ -345,11 +345,11 @@
 .hover-card {
     position: absolute;
     left: calc(100% + -10px);
-    top: 50%;
+    top: 20%;
     transform: translateY(-50%) translateX(-10px);
 
-    width: 400px;
-    padding: 15px;
+    width: 420px;
+    padding: 10px;
     border: 1px solid black;
     color: #333;
     border-radius: 10px;
